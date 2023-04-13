@@ -6,14 +6,17 @@
 	<head>
 		<!-- Заголовок страницы в браузере -->
 		<title>PrimeOne</title>
-		<link rel="stylesheet" href="css/style.css" />
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		<meta name="format-detection" content="telephone=no">
-		<meta name="referrer" content="no-referrer"> 
-		<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"async defer></script>
+		<meta name="description" content="
+			Mary's simple recipe for maple bacon donuts
+			makes a sticky, sweet treat with just a hint
+			of salt that you'll keep coming back for.
+		">
 
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<!-- Отображаемое тело страницы -->
 	<body>
@@ -21,24 +24,24 @@
 			<div class="container">
 				<div class="heder-top">
 					<div class="heder-top-lang">
-						<a href="#" class="heder-top-lang__item active">EN</a>
-						<a href="#" class="heder-top-lang__item">RU</a>
-						<a href="#" class="heder-top-lang__item">ESP</a>
+						<a href="#" class="heder-top-lang__item hover-transform active">EN</a>
+						<a href="#" class="heder-top-lang__item hover-transform">RU</a>
+						<a href="#" class="heder-top-lang__item hover-transform">ESP</a>
 					</div>
-					<a href="" class="heder-top__link">Online ordering</a>
+					<a href="" class="heder-top__link hover-transform">Online ordering</a>
 				</div>
 				<div class="heder-bottom">
 					<div class="heder-bottom__column" id="heder-bottom__column-1">
 						<nav class="heder-bottom-memu" id="heder-bottom-memu-1">
 							<ul class="heder-bottom-memu-list">
 								<li>
-									<a href="#" class="heder-bottom-memu_link">ABOUT</a>
+									<a href="#" class="heder-bottom-memu_link hover-transform">ABOUT</a>
 								</li>
 								<li>
-									<a href="#" class="heder-bottom-memu_link">Menus</a>
+									<a href="#" class="heder-bottom-memu_link hover-transform">Menus</a>
 								</li>
 								<li>
-									<a href="#" class="heder-bottom-memu_link">Service Info</a>
+									<a href="#" class="heder-bottom-memu_link hover-transform">Service Info</a>
 								</li>
 							</ul>
 						</nav>
@@ -54,13 +57,13 @@
 						<nav class="heder-bottom-memu heder-bottom-memu--right" id="heder-bottom-memu-2">
 							<ul class="heder-bottom-memu-list">
 								<li>
-									<a href="#" class="heder-bottom-memu_link">Gallery</a>
+									<a href="#" class="heder-bottom-memu_link hover-transform">Gallery</a>
 								</li>
 								<li>
-									<a href="#" class="heder-bottom-memu_link">Friends</a>
+									<a href="#" class="heder-bottom-memu_link hover-transform">Friends</a>
 								</li>
 								<li>
-									<a href="#" class="heder-bottom-memu_link">Contact</a>
+									<a href="#" class="heder-bottom-memu_link hover-transform">Contact</a>
 								</li>
 							</ul>
 						</nav>
@@ -87,8 +90,8 @@
 						    <div class="private-body__title">Private catering</div>
 						    <div class="private-body__text">Treat your guests to a beautifully plated dinner, hand-crafted canapes or a casual BBQ.</div>
 						    <div class="private-body-buttons">
-							    <a href="" class="private-body-buttons__item btn--w">Get a quote</a>
-							    <a href="" class="private-body-buttons__link">View menus</a>
+							    <a href="" class="private-body-buttons__item hover-transform btn--w">Get a quote</a>
+							    <a href="" class="private-body-buttons__link hover-transform">View menus</a>
 						    </div>
 						</div>
 					</div>
@@ -99,54 +102,70 @@
 					<div class="products-body">
 						<div class="products__column">
 							<div class="products-item">
-								<a href="#" class="products-item__image1"></a>
-								<a href="#" class="products-item__title">Corporate catering</a>
+								<a href="#" class="products-item__image">
+									<span class="ibg">
+										<img src="img/02.jpg" alt="">
+									</span>
+								</a>
+								<a href="#" class="products-item__title hover-transform">Corporate catering</a>
 								<div class="products-item__text">
 									<p>
 									We are able to serve events from 2 to 2000 guests and always reasonable prices.
 								    </p>
 							    </div>
-								<p><a href="#" class="products-item__btn btn">Get a quote</a></p>
-								<p><a href="#" class="products-item__link">View menus</a></p>
+								<p><a href="#" class="products-item__btn hover-transform btn">Get a quote</a></p>
+								<p><a href="#" class="products-item__link hover-transform">View menus</a></p>
 							</div>
 						</div>
 						<div class="products__column">
 							<div class="products-item">
-								<a href="#" class="products-item__image2"></a>
-								<a href="#" class="products-item__title">Private catering</a>
+								<a href="#" class="products-item__image">
+									<span class="ibg">
+										<img src="img/03.jpg" alt="">
+									</span>
+								</a>
+								<a href="#" class="products-item__title hover-transform">Private catering</a>
 								<div class="products-item__text">
 									<p>
 									Fresh, seasonal and simple cuisine. Food is our business and our passion.
 								    </p>
 							    </div>
-								<p><a href="#" class="products-item__btn btn">Get a quote</a></p>
-								<p><a href="#" class="products-item__link">View menus</a></p>
+								<p><a href="#" class="products-item__btn hover-transform btn">Get a quote</a></p>
+								<p><a href="#" class="products-item__link hover-transform">View menus</a></p>
 							</div>
 						</div>
 						<div class="products__column">
 							<div class="products-item">
-								<a href="#" class="products-item__image3"></a>
-								<a href="#" class="products-item__title">Wedding catering</a>
+								<a href="#" class="products-item__image">
+									<span class="ibg">
+										<img src="img/04.jpg" alt="">
+									</span>
+								</a>
+								<a href="#" class="products-item__title hover-transform">Wedding catering</a>
 								<div class="products-item__text">
 									<p>
 									We use only the best organic ingredients and gluten and dairy free cooking.
 								    </p>
 							    </div>
-								<p><a href="#" class="products-item__btn btn">Get a quote</a></p>
-								<p><a href="#" class="products-item__link">View menus</a></p>
+								<p><a href="#" class="products-item__btn hover-transform btn">Get a quote</a></p>
+								<p><a href="#" class="products-item__link hover-transform">View menus</a></p>
 							</div>
 						</div>
 						<div class="products__column">
 							<div class="products-item">
-								<a href="#" class="products-item__image4"></a>
-								<a href="#" class="products-item__title">Online Ordering</a>
+								<a href="#" class="products-item__image">
+									<span class="ibg">
+										<img src="img/05.jpg" alt="">
+									</span>
+								</a>
+								<a href="#" class="products-item__title hover-transform">Online Ordering</a>
 								<div class="products-item__text">
 									<p>
 									Successful catering is about organisation, high quality service, and great food.
 								    </p>
 							    </div>
-								<p><a href="#" class="products-item__btn btn">Get a quote</a></p>
-								<p><a href="#" class="products-item__link">View menus</a></p>
+								<p><a href="#" class="products-item__btn hover-transform btn">Get a quote</a></p>
+								<p><a href="#" class="products-item__link hover-transform">View menus</a></p>
 							</div>
 						</div>
 					</div>
@@ -223,18 +242,18 @@
 								<div class="contacts-body__item contacts-body__item--1">45-35 #B 39th St, Sunnyside, NY 11104</div>
 							</div>
 							<div class="contacts-body__column">
-								<a href="mailto:contact@primeone.com" class="contacts-body__item contacts-body__item--2">contact@primeone.com</a>
+								<a href="#" class="contacts-body__item hover-transform contacts-body__item--2">contact@primeone.com</a>
 							</div>
 							<div class="contacts-body__column">
-								<a href="tel:(718) 777-7777" class="contacts-body__item contacts-body__item--3">(718) 777-7777</a>
+								<a href="#" class="contacts-body__item hover-transform contacts-body__item--3">(718) 777-7777</a>
 							</div>
 							<div class="contacts-body__column">
 								<div class="contacts-body__column">
 									<div class="contacts-social">
-										<a href="" class="contacts-social__item contacts-social__item--1"><img src="img/icon_4.png" alt=""></a>
-										<a href="" class="contacts-social__item contacts-social__item--2"><img src="img/icon_5.png" alt=""></a>
-										<a href="" class="contacts-social__item contacts-social__item--3"><img src="img/icon_6.png" alt=""></a>
-										<a href="" class="contacts-social__item contacts-social__item--4"><img src="img/icon_7.png" alt=""></a>
+										<a href="" class="contacts-social__item contacts-social__item--1 hover-transform"><img src="img/icon_4.png" alt=""></a>
+										<a href="" class="contacts-social__item contacts-social__item--2 hover-transform"><img src="img/icon_5.png" alt=""></a>
+										<a href="" class="contacts-social__item contacts-social__item--3 hover-transform"><img src="img/icon_6.png" alt=""></a>
+										<a href="" class="contacts-social__item contacts-social__item--4 hover-transform"><img src="img/icon_7.png" alt=""></a>
 									</div>
 								</div>
 							</div>
@@ -248,18 +267,18 @@
 					<div class="contacts-content__column">
 						<div class="contacts-content-form">
 							<div class="contacts-content-form__title">Get in touch</div>
-							<form action="#" class="contacts-content-form__body">
+							<form action="#" class="contacts-content-form__body _form">
 								<div class="contacts-content-form-line">
-									<input autocomplete="off" placeholder="Name" type="text" name="form[]" class="input">
+									<input autocomplete="off" placeholder="Name" type="text" name="form[]" class="input _req">
 								</div>
 								<div class="contacts-content-form-line">
-									<input autocomplete="off" placeholder="E-mail or phone number" type="text" name="form[]" class="input">
+									<input autocomplete="off" placeholder="E-mail or phone number" type="email" name="form[]" class="input _email _req">
 								</div>
 								<div class="contacts-content-form-line">
-									<textarea autocomplete="off" placeholder="Your message" type="text" name="form[]" class="input"></textarea>
+									<textarea autocomplete="off" placeholder="Your message" name="form[]" class="input _req"></textarea>
 								</div>
 								<div class="contacts-content-form-button">
-									<button type="submit" class="contacts-content-form__bth btn--w">Send message</button>
+									<button type="submit" class="contacts-content-form__bth hover-transform btn--w">Send message</button>
 								</div>
 							</form>
 						</div>
@@ -280,8 +299,17 @@
 			</div>
 		</footer>
 
-
-		<script src="js/Js.js"></script>
+		<script >
+			function initMap() {
+				var uluru = {lat: 50.07233459352159, lng: 14.447075454751284};
+				var map = new google.maps.Map(document.querySelector("#map"), {
+					zoom: 10,
+					center: uluru
+				});
+			}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
+		<script src="js/Js.js" defer></script>
 	</body>
 </html>
 
