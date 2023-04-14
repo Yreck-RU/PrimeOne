@@ -342,3 +342,40 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+const animItems = document.querySelectorAll('._anim-items');
+const loadMapBlock = document.querySelector('._load-map');
+let loadMapBlockBulen = true;
+
+let timerinAniItem = setTimeout(function tick() {
+	if (animItems.length > 0 && loadMapBlock) {
+		window.addEventListener('scroll', animOnScroll);
+		function animOnScroll () {
+			for (let index = 0; index < animItems.length; index++) {
+				//console.log(getCoords(animItems[index]));
+				const animItem = animItems[index];
+				const animItemOffset = offset(animItem).top;
+
+				window.addEventListener('scroll', function(){
+					if ((animItemOffset - ((window.innerWidth / 45) * 25) ) < window.scrollY && loadMapBlockBulen) {
+						loadMapBlockBulen = false;
+						loadMapBlock.insertAdjacentHTML('beforebegin', '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d163930.61560902974!2d14.327942420312501!3d50.059772900000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b939c0970798b%3A0x400af0f66164090!2z0J_RgNCw0LPQsCwg0KfQtdGF0LjRjw!5e0!3m2!1sru!2sru!4v1681465458738!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>');
+					}
+				});
+				if ((animItemOffset - ((window.innerWidth / 45) * 25) ) < window.scrollY && loadMapBlockBulen) {
+					loadMapBlockBulen = false;
+					loadMapBlock.insertAdjacentHTML('beforebegin', '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d163930.61560902974!2d14.327942420312501!3d50.059772900000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b939c0970798b%3A0x400af0f66164090!2z0J_RgNCw0LPQsCwg0KfQtdGF0LjRjw!5e0!3m2!1sru!2sru!4v1681465458738!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>');
+				}
+			}
+
+		}
+		function offset(el) {
+			const rect = el.getBoundingClientRect(),
+				scrollleft = window.pageXOffset || document.documentElement.scrollleft,
+				scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+			return { top: rect.top + scrollTop, left: rect.left + scrollleft}
+		}
+		animOnScroll();
+	}
+}, 500);
